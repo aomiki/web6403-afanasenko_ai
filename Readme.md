@@ -15,3 +15,21 @@
 <img src="https://cloudinsect.com/images/image23.jpg" alt="pretty pic" width="800"/>
 
 <img src="haha_pic.png" alt="haha pic" width="300"/>
+
+---
+
+# Лабораторная работа №2
+
+**Тема**: сайт-галерея снимков NASA, свободных для использования, на весь экран. Тексты сайта — на английском.
+
+Сайт лежит в папке [`lab2`](lab2), открыть — [`lab2/index.html`](lab2/index.html).
+
+## Страницы (вкладки)
+
+| Файл | Вкладка | Что на странице |
+| --- | --- | --- |
+| `index.html` | Home | Полноэкранный снимок и три карточки-категории |
+| `earth.html` | Earth | 3 снимка Земли из космоса |
+| `moon.html` | Moon | 4 снимка: программа «Аполлон» и вид с МКС |
+| `space.html` | Deep Space | Снимки телескопов Webb, Hubble и марсохода Curiosity |
+| `catalog.html` | Catalog | Таблица всех снимков |

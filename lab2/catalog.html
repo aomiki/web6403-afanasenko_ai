@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Catalog</title>
+    <!-- Link the shared stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header: category tabs -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="earth.html">Earth</a>
+            <a href="moon.html">Moon</a>
+            <a href="space.html">Deep Space</a>
+            <a href="catalog.html" class="active">Catalog</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <p class="meta">10 photos · 3 categories</p>
+        <h1>Photo Catalog</h1>
+        <p>Every photo in the gallery in one table. NASA images are in the
+           <strong>public domain</strong>: you can use them for free, crediting NASA as the source.</p>
+
+        <!-- Table: the left / center / right classes set the alignment -->
+        <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th class="center">#</th>
+                    <th class="center">Preview</th>
+                    <th class="left">Title</th>
+                    <th class="left">Mission</th>
+                    <th class="center">Category</th>
+                    <th class="right">Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="center">01</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/as17-148-22727/as17-148-22727~thumb.jpg" alt="The Blue Marble"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/as17-148-22727" target="_blank">The Blue Marble</a></td>
+                    <td class="left">Apollo 17</td>
+                    <td class="center"><a href="earth.html">Earth</a></td>
+                    <td class="right">1972</td>
+                </tr>
+                <tr>
+                    <td class="center">02</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/iss056e201248/iss056e201248~thumb.jpg" alt="The ISS above Earth"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/iss056e201248" target="_blank">The ISS above Earth</a></td>
+                    <td class="left">Soyuz MS-08, Expedition 56</td>
+                    <td class="center"><a href="earth.html">Earth</a></td>
+                    <td class="right">2018</td>
+                </tr>
+                <tr>
+                    <td class="center">03</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/iss007e07306/iss007e07306~thumb.jpg" alt="The Edge of the Atmosphere"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/iss007e07306" target="_blank">The Edge of the Atmosphere</a></td>
+                    <td class="left">ISS Expedition 7</td>
+                    <td class="center"><a href="earth.html">Earth</a></td>
+                    <td class="right">2003</td>
+                </tr>
+                <tr>
+                    <td class="center">04</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/as08-14-2383/as08-14-2383~thumb.jpg" alt="Earthrise"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/as08-14-2383" target="_blank">Earthrise</a></td>
+                    <td class="left">Apollo 8</td>
+                    <td class="center"><a href="moon.html">Moon</a></td>
+                    <td class="right">1968</td>
+                </tr>
+                <tr>
+                    <td class="center">05</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/as11-40-5903/as11-40-5903~thumb.jpg" alt="A Man on the Moon"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/as11-40-5903" target="_blank">A Man on the Moon</a></td>
+                    <td class="left">Apollo 11</td>
+                    <td class="center"><a href="moon.html">Moon</a></td>
+                    <td class="right">1969</td>
+                </tr>
+                <tr>
+                    <td class="center">06</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/as15-88-11866/as15-88-11866~thumb.jpg" alt="Salute at Hadley"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/as15-88-11866" target="_blank">Salute at Hadley</a></td>
+                    <td class="left">Apollo 15</td>
+                    <td class="center"><a href="moon.html">Moon</a></td>
+                    <td class="right">1971</td>
+                </tr>
+                <tr>
+                    <td class="center">07</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/iss042e097549/iss042e097549~thumb.jpg" alt="Full Moon from Orbit"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/iss042e097549" target="_blank">Full Moon from Orbit</a></td>
+                    <td class="left">ISS Expedition 42</td>
+                    <td class="center"><a href="moon.html">Moon</a></td>
+                    <td class="right">2015</td>
+                </tr>
+                <tr>
+                    <td class="center">08</td>
+                    <td class="center"><img src="https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2022/07/STScI-01GA6KKWG229B16K4Q38CH3BXS.png/jcr:content/renditions/2000x1158.png" alt="Cosmic Cliffs"></td>
+                    <td class="left"><a href="https://science.nasa.gov/asset/webb/cosmic-cliffs-in-the-carina-nebula-nircam-image/" target="_blank">Cosmic Cliffs</a></td>
+                    <td class="left">James Webb Telescope</td>
+                    <td class="center"><a href="space.html">Deep Space</a></td>
+                    <td class="right">2022</td>
+                </tr>
+                <tr>
+                    <td class="center">09</td>
+                    <td class="center"><img src="https://science.nasa.gov/wp-content/uploads/2023/04/hubble_birthofstars_0-jpg.webp" alt="Pillars of Creation"></td>
+                    <td class="left"><a href="https://science.nasa.gov/image-detail/hubble-goes-high-def-to-revisit-the-iconic-pillars-of-creation" target="_blank">Pillars of Creation</a></td>
+                    <td class="left">Hubble Telescope</td>
+                    <td class="center"><a href="space.html">Deep Space</a></td>
+                    <td class="right">2014</td>
+                </tr>
+                <tr>
+                    <td class="center">10</td>
+                    <td class="center"><img src="https://images-assets.nasa.gov/image/PIA19912/PIA19912~thumb.jpg" alt="Mount Sharp on Mars"></td>
+                    <td class="left"><a href="https://images.nasa.gov/details/PIA19912" target="_blank">Mount Sharp on Mars</a></td>
+                    <td class="left">Curiosity rover</td>
+                    <td class="center"><a href="space.html">Deep Space</a></td>
+                    <td class="right">2015</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </main>
+
+    <footer>
+        Source: <a href="https://images.nasa.gov" target="_blank">NASA Image and Video Library</a>
+    </footer>
+
+</body>
+</html>

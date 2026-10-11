@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link the shared stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header: category tabs -->
+    <header>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="earth.html">Earth</a>
+            <a href="moon.html">Moon</a>
+            <a href="space.html">Deep Space</a>
+            <a href="catalog.html">Catalog</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- First screen: full-page photo + heading -->
+        <section class="photo" id="hero">
+            <img src="https://images-assets.nasa.gov/image/as08-14-2383/as08-14-2383~large.jpg"
+                 alt="Earthrise over the Moon, Apollo 8">
+            <div class="caption">
+                <p class="meta">Public domain · images.nasa.gov</p>
+                <h1>The Universe through NASA&rsquo;s lens</h1>
+                <p>Photos of Earth, the Moon and distant nebulae that NASA lets anyone use
+                   for free. Pick a category in the tabs above or scroll down.</p>
+                <p><a href="#categories">Browse categories &darr;</a></p>
+            </div>
+        </section>
+
+        <!-- Second screen: three category cards -->
+        <section id="categories">
+            <a class="photo" href="earth.html">
+                <img src="https://images-assets.nasa.gov/image/as17-148-22727/as17-148-22727~medium.jpg"
+                     alt="Earth seen from Apollo 17">
+                <div class="caption">
+                    <p class="meta">3 photos</p>
+                    <h2>Earth</h2>
+                    <p>Our planet from orbit and on the way to the Moon</p>
+                </div>
+            </a>
+            <a class="photo" href="moon.html">
+                <img src="https://images-assets.nasa.gov/image/as11-40-5903/as11-40-5903~medium.jpg"
+                     alt="An astronaut on the Moon">
+                <div class="caption">
+                    <p class="meta">4 photos</p>
+                    <h2>Moon</h2>
+                    <p>The Apollo program and the view from the ISS</p>
+                </div>
+            </a>
+            <a class="photo" href="space.html">
+                <img src="https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2022/07/STScI-01GA6KKWG229B16K4Q38CH3BXS.png/jcr:content/renditions/2000x1158.png"
+                     alt="The Carina Nebula seen by Webb">
+                <div class="caption">
+                    <p class="meta">3 photos</p>
+                    <h2>Deep Space</h2>
+                    <p>Nebulae, Mars, and the Hubble and Webb telescopes</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        All images: <a href="https://images.nasa.gov" target="_blank">NASA Image and Video Library</a>. NASA material is not protected by copyright.
+    </footer>
+
+</body>
+</html>

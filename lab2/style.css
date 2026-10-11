@@ -1,0 +1,164 @@
+/* Shared stylesheet for all pages */
+
+/* Universal selector: reset browser default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type (tag) selectors */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+}
+
+/* Header with tabs */
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 16px 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Descendant selector: all links inside header */
+header a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+/* Child selector: links directly inside nav */
+nav > a {
+    opacity: 0.6;
+}
+
+/* Selector group: :hover pseudo-class and the current tab class */
+nav a:hover,
+nav a.active {
+    opacity: 1;
+    border-bottom: 2px solid #fc3d21;
+}
+
+/* Full-screen photo */
+.photo {
+    position: relative;
+    height: 100vh;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fill the screen without distortion */
+}
+
+.photo img.contain { object-fit: contain; }   /* show the whole photo */
+.photo img.top { object-position: top; }      /* keep the top of the frame */
+
+/* Caption on top of the photo */
+.caption {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    max-width: 520px;
+    text-shadow: 0 0 8px #000000;
+}
+
+h1, h2 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 8px 0;
+}
+
+.meta {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fc3d21;
+}
+
+/* Attribute selector + pseudo-element: arrow after external links */
+a[target="_blank"]::after {
+    content: " ↗";
+}
+
+/* Home page (id selectors) */
+#hero img {
+    object-position: center 75%; /* keep Earth above the heading */
+}
+
+#categories {
+    display: flex;
+}
+
+#categories .photo {
+    flex: 1;
+    text-decoration: none;
+}
+
+#categories img {
+    filter: brightness(0.6);
+}
+
+/* Catalog and table */
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 120px 40px 60px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    margin-top: 32px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #333333;
+}
+
+th {
+    color: #fc3d21;
+}
+
+td img {
+    width: 96px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Table alignment */
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+footer {
+    padding: 24px 40px;
+    font-size: 13px;
+    color: #888888;
+}
+
+/* Phones */
+@media (max-width: 700px) {
+    header { padding: 12px 16px; }
+    nav { flex-wrap: wrap; gap: 12px; }
+    .caption { left: 16px; right: 16px; }
+    h1, h2 { font-size: 32px; }
+    #categories { flex-direction: column; }
+}
